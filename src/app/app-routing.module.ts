@@ -4,11 +4,13 @@ import { BienvenidaComponent } from './components/bienvenida/bienvenida.componen
 import { Example1Component } from './components/example1/example1.component';
 import { Example2Component } from './components/example2/example2.component';
 import { Example3Component } from './components/example3/example3.component';
+import { Example4Component } from './components/example4/example4.component';
 
 const routes: Routes = [
   {path: 'ejemplo1', component: Example1Component},
   {path: 'ejemplo2', component: Example2Component},
   {path: 'ejemplo3', component: Example3Component},
+  {path: 'ejemplo4', component: Example4Component},
   {path: '**', component: BienvenidaComponent},
 ];
 
