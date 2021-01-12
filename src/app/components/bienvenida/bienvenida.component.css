@@ -1,0 +1,11 @@
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container div{
+  margin-top: 200px;
+  font-size: 3em;
+  height: 100px;
+}
