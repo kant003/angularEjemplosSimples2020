@@ -1,0 +1,9 @@
+<p>Two way data binding (banana in the box)</p>
+<p>La comunicacion es bidireccional, del template a la lógica de negocio y vicebersa</p>
+<p>Recuerda importar  FormsModule en el fichero app.module.ts</p>
+
+Inserta el nombre:<input type="text" [(ngModel)]="nombre">
+<br/>
+<button (click)="ponerNombreDefecto()">Rellenar el nombre por defecto</button>
+<br/>
+El nombre que has escrito en la caja es: {{nombre}}

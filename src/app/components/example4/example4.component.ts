@@ -29,8 +29,6 @@ export class Example4Component implements OnInit {
     return numeroPrimo
   }
 
-
-
   ngOnInit(): void {
   }
 }
