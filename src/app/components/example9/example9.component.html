@@ -1,10 +1,11 @@
-<p>Formulario simples</p>
-<form>
+<p>Trabajo con formularios simples</p>
+
+<form (ngSubmit)="onSubmit()">
   <label for="user">Usuario</label>
-  <input type="text" name="user">
+  <input type="text" name="user" [(ngModel)]="user">
   <br/>
   <label for="pass">Password</label>
-  <input type="password" name="pass">
+  <input type="password" name="pass" [(ngModel)]="pass">
   <br/>
   <input type="submit" value="Login">
   <input type="reset" value="Limpiar formulario">

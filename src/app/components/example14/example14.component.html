@@ -1,0 +1,9 @@
+<p>Uso de servicios en angular y tareas asincronas</p>
+
+Cantidad de nº aleatorios a generar:
+<input type="text" [(ngModel)]="cantidad">
+<br/>
+<button (click)="generarNumerosMalHecho()">Generar numeros aleatorios</button>
+<button (click)="generarNumerosBienHecho()">Generar numeros aleatorios (observables)</button>
+<br/>
+{{listaNumeros}}

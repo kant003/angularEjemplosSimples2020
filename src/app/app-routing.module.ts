@@ -2,6 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { BienvenidaComponent } from './components/bienvenida/bienvenida.component';
 import { Example1Component } from './components/example1/example1.component';
+import { Example10Component } from './components/example10/example10.component';
+import { Example11Component } from './components/example11/example11.component';
+import { Example12PadreComponent } from './components/example12-padre/example12-padre.component';
+import { Example13PadreComponent } from './components/example13-padre/example13-padre.component';
+import { Example14Component } from './components/example14/example14.component';
 import { Example2Component } from './components/example2/example2.component';
 import { Example3Component } from './components/example3/example3.component';
 import { Example4Component } from './components/example4/example4.component';
@@ -21,6 +26,11 @@ const routes: Routes = [
   {path: 'ejemplo7', component: Example7Component},
   {path: 'ejemplo8', component: Example8Component},
   {path: 'ejemplo9', component: Example9Component},
+  {path: 'ejemplo10', component: Example10Component},
+  {path: 'ejemplo11', component: Example11Component},
+  {path: 'ejemplo12', component: Example12PadreComponent},
+  {path: 'ejemplo13', component: Example13PadreComponent},
+  {path: 'ejemplo14', component: Example14Component},
   {path: '**', component: BienvenidaComponent},
 ];
 
