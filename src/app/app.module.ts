@@ -23,6 +23,8 @@ import { Example12HijoComponent } from './components/example12-hijo/example12-hi
 import { Example13HijoComponent } from './components/example13-hijo/example13-hijo.component';
 import { Example13PadreComponent } from './components/example13-padre/example13-padre.component';
 import { Example14Component } from './components/example14/example14.component';
+import { Example15Component } from './components/example15/example15.component';
+import { Example16Component } from './components/example16/example16.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +48,8 @@ import { Example14Component } from './components/example14/example14.component';
     Example13HijoComponent,
     Example13PadreComponent,
     Example14Component,
+    Example15Component,
+    Example16Component,
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,8 @@ import { Example11Component } from './components/example11/example11.component';
 import { Example12PadreComponent } from './components/example12-padre/example12-padre.component';
 import { Example13PadreComponent } from './components/example13-padre/example13-padre.component';
 import { Example14Component } from './components/example14/example14.component';
+import { Example15Component } from './components/example15/example15.component';
+import { Example16Component } from './components/example16/example16.component';
 import { Example2Component } from './components/example2/example2.component';
 import { Example3Component } from './components/example3/example3.component';
 import { Example4Component } from './components/example4/example4.component';
@@ -31,6 +33,8 @@ const routes: Routes = [
   {path: 'ejemplo12', component: Example12PadreComponent},
   {path: 'ejemplo13', component: Example13PadreComponent},
   {path: 'ejemplo14', component: Example14Component},
+  {path: 'ejemplo15', component: Example15Component},
+  {path: 'ejemplo16', component: Example16Component},
   {path: '**', component: BienvenidaComponent},
 ];
 

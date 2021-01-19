@@ -1,0 +1,6 @@
+<p>Uso de if else</p>
+<div *ngIf="usuario.isAdmin else sinPermisos">El usuario {{usuario.nombre}} tiene permisos</div>
+
+<ng-template #sinPermisos>
+  El usuario {{usuario.nombre}} no tiene permisos de administrador
+</ng-template>
