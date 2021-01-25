@@ -1,0 +1,20 @@
+Inserta los datos del paciente:
+<form [formGroup]="form" (submit)="onSubmit(form.value)">
+  <label for="nombre">Nombre</label>
+  <input type="text" name="nombre" formControlName="nombre">
+  <br/>
+  <label for="temperatura">Temperatura</label>
+  <input type="temperatura" name="temperatura" formControlName="temperatura">
+  <br/>
+  <input type="submit" value="Enviar" [disabled]="form.invalid">
+</form>
+
+Lista de datos de pacientes:
+<br>
+<ul>
+  <li *ngFor="let paciente of diccionarioPacientes.entries()">
+    <div [style.color]="calculaColor(paciente[1])">
+      {{paciente[0]}}  {{paciente[1]}} ºC  {{centigrados2Fahrenheit(paciente[1])}} ºF
+    </div>
+  </li>
+</ul>

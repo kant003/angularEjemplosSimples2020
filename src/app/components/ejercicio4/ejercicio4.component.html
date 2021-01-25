@@ -1,0 +1,30 @@
+
+<form [formGroup]="form" (submit)="onSubmit(form.value)" autocomplete="off">
+
+  <p>
+  <mat-form-field appearance="legacy">
+    <mat-label>Nombre:</mat-label>
+    <input matInput placeholder="Nombre" name="nombre" formControlName="nombre">
+    <mat-hint>Introduce el nombre completo del alumno</mat-hint>
+  </mat-form-field>
+  </p>
+  <p>
+
+  <mat-form-field appearance="legacy">
+    <mat-label>Nota:</mat-label>
+    <input matInput placeholder="Nota" name="nota" formControlName="nota">
+    <mat-hint>Inserta la nota del 0 al 10</mat-hint>
+  </mat-form-field>
+</p>
+
+  <br/>
+  <input type="submit" value="AÑADIR ALUMNO" [disabled]="form.invalid">
+</form>
+
+<ul>
+  <li *ngFor="let alumno of listaAlumnos">
+    {{alumno.id}}  {{alumno.nombre}} : {{alumno.nota}} <a (click)="borrar(alumno)">X</a>
+  </li>
+</ul>
+<br>
+Nota media: {{calcularMedia()}}

@@ -1,0 +1,5 @@
+<div *ngFor="let numero of listaNumeros" [class.rojito]="esPar(numero)">
+  <div *ngIf="esMenor(numero, 10)">
+    {{numero}}
+  </div>
+</div>

@@ -1,6 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { BienvenidaComponent } from './components/bienvenida/bienvenida.component';
+import { Ejercicio1Component } from './components/ejercicio1/ejercicio1.component';
+import { Ejercicio12Component } from './components/ejercicio12/ejercicio12.component';
+import { Ejercicio15Component } from './components/ejercicio15/ejercicio15.component';
+import { Ejercicio18Component } from './components/ejercicio18/ejercicio18.component';
+import { Ejercicio4Component } from './components/ejercicio4/ejercicio4.component';
+import { Ejercicio7Component } from './components/ejercicio7/ejercicio7.component';
 import { Example1Component } from './components/example1/example1.component';
 import { Example10Component } from './components/example10/example10.component';
 import { Example11Component } from './components/example11/example11.component';
@@ -9,6 +15,8 @@ import { Example13PadreComponent } from './components/example13-padre/example13-
 import { Example14Component } from './components/example14/example14.component';
 import { Example15Component } from './components/example15/example15.component';
 import { Example16Component } from './components/example16/example16.component';
+import { Example17Component } from './components/example17/example17.component';
+import { Example18Component } from './components/example18/example18.component';
 import { Example2Component } from './components/example2/example2.component';
 import { Example3Component } from './components/example3/example3.component';
 import { Example4Component } from './components/example4/example4.component';
@@ -35,8 +43,16 @@ const routes: Routes = [
   {path: 'ejemplo14', component: Example14Component},
   {path: 'ejemplo15', component: Example15Component},
   {path: 'ejemplo16', component: Example16Component},
-  {path: '**', component: BienvenidaComponent},
-];
+  {path: 'ejemplo17/:id', component: Example17Component},
+  {path: 'ejemplo18', component: Example18Component},
+  {path: 'ejercicio1', component: Ejercicio1Component},
+  {path: 'ejercicio4', component: Ejercicio4Component},
+  {path: 'ejercicio7', component: Ejercicio7Component},
+  {path: 'ejercicio12', component: Ejercicio12Component},
+  {path: 'ejercicio15', component: Ejercicio15Component},
+  {path: 'ejercicio18', component: Ejercicio18Component},
+  {path: '**', component: BienvenidaComponent},];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

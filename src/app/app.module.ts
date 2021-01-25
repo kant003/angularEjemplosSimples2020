@@ -10,7 +10,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { BienvenidaComponent } from './components/bienvenida/bienvenida.component';
 import { Example4Component } from './components/example4/example4.component';
 import { Example5Component } from './components/example5/example5.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Example6Component } from './components/example6/example6.component';
 import { Example7Component } from './components/example7/example7.component';
 import { Example8Component } from './components/example8/example8.component';
@@ -25,6 +25,20 @@ import { Example13PadreComponent } from './components/example13-padre/example13-
 import { Example14Component } from './components/example14/example14.component';
 import { Example15Component } from './components/example15/example15.component';
 import { Example16Component } from './components/example16/example16.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import { Example17Component } from './components/example17/example17.component';
+import { Example18Component } from './components/example18/example18.component';
+import { Ejercicio1Component } from './components/ejercicio1/ejercicio1.component';
+import { Ejercicio18Component } from './components/ejercicio18/ejercicio18.component';
+import { Ejercicio4Component } from './components/ejercicio4/ejercicio4.component';
+import {MatFormFieldControl, MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { Ejercicio7Component } from './components/ejercicio7/ejercicio7.component';
+import { Ejercicio12Component } from './components/ejercicio12/ejercicio12.component';
+import { HttpClientModule } from '@angular/common/http';
+import { Ejercicio15Component } from './components/ejercicio15/ejercicio15.component';
 
 @NgModule({
   declarations: [
@@ -50,11 +64,26 @@ import { Example16Component } from './components/example16/example16.component';
     Example14Component,
     Example15Component,
     Example16Component,
+    Example17Component,
+    Example18Component,
+    Ejercicio1Component,
+    Ejercicio18Component,
+    Ejercicio4Component,
+    Ejercicio7Component,
+    Ejercicio12Component,
+    Ejercicio15Component,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatInputModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,10 @@
+<form [formGroup]="form" (submit)="onSubmit(form.value)">
+  <label for="altura">Altura</label>
+  <input type="text" name="altura" formControlName="altura">
+  <br/>
+  <label for="peso">Peso</label>
+  <input type="texto" name="peso" formControlName="peso">
+  <br/>
+  <input type="submit" value="Enviar" [disabled]="form.invalid">
+</form>
+Tu imc es: {{imc}} tienes {{calcularTextoIMC(imc)}}
