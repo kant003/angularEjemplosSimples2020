@@ -47,7 +47,7 @@ export class Ejercicio11Component implements OnInit {
   // Si no se presentó a algun examen (trabajo no) de alguna evaluacion,
   // lo tomamos como no presentado
   getNumNoPresentados(){
-    let estudiantesFiltrados =
+
   }
   getMediaTotal(){
     let suma = 0;
