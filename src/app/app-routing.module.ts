@@ -2,7 +2,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { BienvenidaComponent } from './components/bienvenida/bienvenida.component';
 import { Ejercicio1Component } from './components/ejercicio1/ejercicio1.component';
+import { Ejercicio11Component } from './components/ejercicio11/ejercicio11.component';
+import { Ejercicio12PokemonDetalleComponent } from './components/ejercicio12-pokemon-detalle/ejercicio12-pokemon-detalle.component';
 import { Ejercicio12Component } from './components/ejercicio12/ejercicio12.component';
+import { Ejercicio14Component } from './components/ejercicio14/ejercicio14.component';
 import { Ejercicio15Component } from './components/ejercicio15/ejercicio15.component';
 import { Ejercicio18Component } from './components/ejercicio18/ejercicio18.component';
 import { Ejercicio4Component } from './components/ejercicio4/ejercicio4.component';
@@ -48,8 +51,11 @@ const routes: Routes = [
   {path: 'ejercicio1', component: Ejercicio1Component},
   {path: 'ejercicio4', component: Ejercicio4Component},
   {path: 'ejercicio7', component: Ejercicio7Component},
+  {path: 'ejercicio11', component: Ejercicio11Component},
   {path: 'ejercicio12', component: Ejercicio12Component},
+  {path: 'ejercicio12/:id', component: Ejercicio12PokemonDetalleComponent},
   {path: 'ejercicio15', component: Ejercicio15Component},
+  {path: 'ejercicio14', component: Ejercicio14Component},
   {path: 'ejercicio18', component: Ejercicio18Component},
   {path: '**', component: BienvenidaComponent},];
 

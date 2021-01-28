@@ -15,7 +15,8 @@ export class PokemonService {
     return this.httpClient.get(url)
   }
 
-  /*getDatosPokemon(id: number){
-
-  }*/
+  getDatosPokemon(id: number): Observable<any>{
+    const url = `https://pokeapi.co/api/v2/pokemon/${id}`
+    return this.httpClient.get(url)
+  }
 }

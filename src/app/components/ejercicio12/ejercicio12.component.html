@@ -1,1 +1,7 @@
-<p>Lista de los primeros 200 pokemons</p>
+<p>Lista de los primeros 20 pokemons</p>
+Inserta el nº de pokemons a mostrar:
+<input type="text" #cantidad (change)="refrescarListaPokemons(cantidad.value)">
+<br>
+<div *ngFor="let pokemon of listaPokemons; index as i">
+  {{pokemon.name}} <a [routerLink]="['/ejercicio12', i+1]">+Info</a>
+</div>

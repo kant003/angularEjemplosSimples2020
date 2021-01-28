@@ -39,6 +39,9 @@ import { Ejercicio7Component } from './components/ejercicio7/ejercicio7.componen
 import { Ejercicio12Component } from './components/ejercicio12/ejercicio12.component';
 import { HttpClientModule } from '@angular/common/http';
 import { Ejercicio15Component } from './components/ejercicio15/ejercicio15.component';
+import { Ejercicio12PokemonDetalleComponent } from './components/ejercicio12-pokemon-detalle/ejercicio12-pokemon-detalle.component';
+import { Ejercicio14Component } from './components/ejercicio14/ejercicio14.component';
+import { Ejercicio11Component } from './components/ejercicio11/ejercicio11.component';
 
 @NgModule({
   declarations: [
@@ -72,6 +75,9 @@ import { Ejercicio15Component } from './components/ejercicio15/ejercicio15.compo
     Ejercicio7Component,
     Ejercicio12Component,
     Ejercicio15Component,
+    Ejercicio12PokemonDetalleComponent,
+    Ejercicio14Component,
+    Ejercicio11Component,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,55 @@
+<h1>Lista de estudiantes</h1>
+<ul>
+  <li *ngFor="let estudiante of listaEstudiantes">
+    Nombre: {{estudiante.nombre}}
+    Nota final:
+    <span [class.fondoRosa]="estudiante.getNotaFinal()<5">
+      {{estudiante.getNotaFinal() | number: '1.1-2'}}
+    </span>
+    <br/>
+    Nota examen 1ª eval:{{estudiante.notaExamen1}}
+    Nota trabajo 1ª eval:{{estudiante.notaTrabajo1}}
+    Nota media 1ª eval: {{estudiante.getNotaMedia1()| number: '1.1-2'}}
+    <br>
+    Nota examen 2ª eval:{{estudiante.notaExamen2}}
+    Nota trabajo 2ª eval:{{estudiante.notaTrabajo2}}
+    Nota media 2ª eval: {{estudiante.getNotaMedia2()| number: '1.1-2'}}
+    <br/>
+    Nota examen 3ª eval:{{estudiante.notaExamen3}}
+    Nota trabajo 3ª eval:{{estudiante.notaTrabajo3}}
+    Nota media 3ª eval: {{estudiante.getNotaMedia3()| number: '1.1-2'}}
+  </li>
+</ul>
+Nº alumnos aprobados: {{getNumAprobados()}}
+<br/>
+Nº alumnos suspensos: {{getNumSuspensos()}}
+<br/>
+Nº alumnos no presentados: {{getNumNoPresentados()}}
+<br/>
+Media de todos los alumnos: {{getMediaTotal() | number: '1.1-2'}}
+
+<h2>Añade las calificaciones de un nuevo estudiantes</h2>
+<form [formGroup]="form" (submit)="onSubmit(form.value)">
+  <label for="nombre">Nombre</label>
+  <input type="text" name="nombre" formControlName="nombre">
+  <br/>
+  <label for="notaExamen1">Nota Examen 1ªeval</label>
+  <input type="number" name="notaExamen1" formControlName="notaExamen1">
+
+  <label for="notaTrabajo1">Nota trabajo 1ªeval</label>
+  <input type="number" name="notaTrabajo1" formControlName="notaTrabajo1">
+  <br/>
+  <label for="notaExamen2">Nota Examen 2ªeval</label>
+  <input type="number" name="notaExamen2" formControlName="notaExamen2">
+
+  <label for="notaTrabajo2">Nota trabajo 2ªeval</label>
+  <input type="number" name="notaTrabajo2" formControlName="notaTrabajo2">
+  <br/>
+  <label for="notaExamen3">Nota Examen 3ªeval</label>
+  <input type="number" name="notaExamen3" formControlName="notaExamen3">
+
+  <label for="notaTrabajo3">Nota trabajo 3ªeval</label>
+  <input type="number" name="notaTrabajo3" formControlName="notaTrabajo3">
+  <br/>
+  <input type="submit" value="Enviar" [disabled]="form.invalid">
+</form>

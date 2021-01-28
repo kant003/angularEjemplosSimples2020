@@ -1,0 +1,7 @@
+<br>
+Inserta la frase:
+<input [style.color]="getColor()" type="text" [(ngModel)]="textoSinConvertir">
+<br>
+<button *ngIf="isVisible()" (click)="convertir()">Convertir</button>
+<br>
+<div>{{textoConvertido}}</div>
